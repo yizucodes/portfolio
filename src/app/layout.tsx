@@ -32,6 +32,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: `${DATA.name} - Portfolio`,
+        type: "image/png",
       },
     ],
   },
@@ -50,6 +51,7 @@ export const metadata: Metadata = {
     title: `${DATA.name}`,
     description: DATA.description,
     card: "summary_large_image",
+    images: [`${DATA.url}/me.png`],
   },
 };
 
