@@ -1,0 +1,316 @@
+import { Icons } from "@/components/icons";
+import { HomeIcon } from "lucide-react";
+
+export const DATA = {
+  name: "Yi Zu",
+  initials: "YZ",
+  url: "https://yizucodes.com",
+  location: "San Francisco, CA",
+  locationLink: "https://www.google.com/maps/place/san+francisco",
+  description:
+    "Software engineer building AI‑powered web systems. Shipped features to 42M+ users at CarGurus and won multiple hackathons including Meta’s Llama and Harvard EasyA & Polkadot",
+  summary:
+    "Software engineer combining enterprise scale and startup velocity. Shipped features to 42M+ users at CarGurus and built award‑winning AI products, including Meta’s Llama hackathon and Harvard EasyA & Polkadot ($5K). MSCS from Northeastern and dual degrees in Economics and Business from Boston University; worked with teams across the US, Italy, and China.",
+  avatarUrl: "/me.png",
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Java",
+    "React",
+    "Next.js",
+    "PyTorch",
+    "OpenAI",
+    "FastAPI",
+    "PostgreSQL",
+    "AWS",
+    "Node.js",
+  ],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+  ],
+  contact: {
+    email: "yizucodes@gmail.com",
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/yizucodes",
+        icon: Icons.github,
+        navbar: true,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://linkedin.com/in/yizu",
+        icon: Icons.linkedin,
+        navbar: true,
+      },
+      X: {
+        name: "X",
+        url: "https://x.com/yizucodes",
+        icon: Icons.x,
+        navbar: false,
+      },
+      email: {
+        name: "Send Email",
+        url: "#",
+        icon: Icons.email,
+        navbar: false,
+      },
+    },
+  },
+
+  work: [
+    {
+      company: "SecondSense",
+      href: "https://secondsense.com",
+      badges: ["Case Study"],
+      location: "New York, NY",
+      title: "Software Engineer (Contract)",
+      logoUrl: "/secondsense.png",
+      start: "August 2025",
+      end: "September 2025",
+      description: [
+        "Redesigned luxury product discovery flow from 20+ field form to 5-step wizard enabling 300+ users to complete wishes in 7 days through progressive disclosure and improved UX",
+        "Engineered Next.js/TypeScript wizard with AWS ECS job orchestration for automated product matching and personalized emails across 300+ subscriptions",
+      ],
+      caseStudy: {
+        enabled: true,
+        slug: "secondsense-bag-concierge",
+        preview: {
+          problem: "Luxury product discovery flow had 20+ fields causing high abandonment. Users struggled to complete their wish lists, impacting conversion.",
+          metrics: ["300+ users", "7 days", "5-step wizard"],
+        },
+        video: {
+          src: "/bag-concierge.mp4",
+          thumbnail: undefined,
+          autoplay: false,
+          loop: false,
+          muted: true,
+          caption: "5-step wizard demo",
+        },
+        content: {
+          problem: "SecondSense's luxury product discovery flow required users to fill out a form with 20+ fields, leading to information overload and high abandonment.",
+          approach: "I redesigned the entire discovery flow using progressive disclosure principles, breaking the 20+ field form into a 5-step wizard. Each step focused on a single aspect of the user's preferences, making the process feel manageable. The wizard was built with Next.js and TypeScript, ensuring type safety and optimal performance. On the backend, I implemented AWS ECS job orchestration to handle automated product matching and personalized email generation at scale. When products match a user's wish, the system automatically sends beautifully designed email notifications with multiple product options, pricing, condition details, and direct purchase links.",
+          challenges: [
+            "Designing a UX that felt premium and aligned with SecondSense's luxury brand",
+            "Building a scalable email notification system from scratch with personalized templates",
+            "Maintaining email personalization quality at scale with AWS ECS job orchestration",
+          ],
+          results: [
+            "300+ users completed their wish lists within 7 days of launch",
+            "Successfully orchestrated automated product matching across 300+ subscriptions",
+            "Delivered a production-ready email notification system handling personalized communications at scale",
+          ],
+          technologies: ["Next.js", "TypeScript", "AWS ECS", "React", "Tailwind CSS"],
+          images: ["/secondsense-email-match.png"],
+        },
+      },
+    },
+    {
+      company: "CarGurus",
+      href: "https://cargurus.com",
+      badges: ["Case Study"],
+      location: "Cambridge, MA",
+      title: "Software Engineer Co-op",
+      logoUrl: "/cargurus.png",
+      start: "January 2024",
+      end: "June 2024",
+      description: [
+        "Collaborated in 10-person Agile team to develop vehicle detail and post-lead pages for multi-platform web application serving 21 million monthly vehicle page users (part of 42 million total monthly users)",
+        "Migrated 10 legacy UI components to custom Radix UI library in 150,000+ line codebase and implemented A/B testing frameworks",
+      ],
+      caseStudy: {
+        enabled: true,
+        slug: "cargurus-design-system-migration",
+        preview: {
+          problem: "Legacy UI components caused inconsistent UX and maintenance overhead across 100M+ monthly visits.",
+          metrics: ["10+ components", "Zero downtime", "3 major pages"],
+        },
+        video: {
+          src: "/ui-migration.mp4",
+          thumbnail: undefined,
+          autoplay: false,
+          loop: false,
+          muted: true,
+          caption: "Design system migration demo",
+        },
+        content: {
+          problem: "CarGurus' Vehicle Detail, Search Results, and Post Lead pages used legacy UI components causing inconsistent experiences across 42M+ monthly visits and blocking design system adoption.",
+          approach: "Migrated 10+ critical components (Modal, Accordion, Deal Rating, Image, Select) to the modern design system as part of a platform-wide initiative. Implemented A/B testing for user-facing changes, debugged production issues including modal resize bugs and image placeholder rendering, and coordinated with Design and Analytics teams to maintain pixel-perfect consistency across migrations.",
+          challenges: [
+            "Maintaining React hydration across server-rendered FreeMarker templates and client-side code",
+            "Debugging design system component bugs (modal width, accordion interactions) in production",
+            "Coordinating A/B test rollouts and analytics instrumentation with cross-functional teams",
+          ],
+          results: [
+            "Successfully migrated 10+ components across three major pages with zero production incidents",
+            "Delivered migrations serving 42M+ monthly visits while maintaining design consistency",
+            "Contributed to platform-wide design system adoption and improved developer experience",
+          ],
+          technologies: ["React", "TypeScript", "Less", "CSS", "FreeMarker", "Jest", "A/B Testing", "Radix UI", "Redux"],
+          images: [],
+        },
+      },
+    },
+    {
+      company: "E.R.WEB",
+      href: "https://www.erweb.it/it-IT/",
+      badges: [],
+      location: "Turin, Italy",
+      title: "Frontend Developer",
+      logoUrl: "/erweb.png",
+      start: "May 2023",
+      end: "August 2023",
+      description: [
+        "Collaborated with engineers to develop mobile React Native and desktop React vaping IoT applications serving 50,000+ users",
+        "Implemented pixel-perfect UI components from Figma designs with Bluetooth connectivity and responsive layouts",
+      ],
+    },
+    {
+      company: "Blue Reply",
+      href: "https://bluereply.com",
+      badges: [],
+      location: "Turin, Italy",
+      title: "Frontend Developer",
+      logoUrl: "/bluereply.png",
+      start: "June 2021",
+      end: "August 2022",
+      description: [
+        "Collaborated with product owners and analytics consultants to implement Google Analytics tracking across 5+ Whirlpool e-commerce sites serving 3M+ monthly users",
+        "Developed React components for Luxottica's B2B eyewear e-commerce platform with product displays and permission management portal",
+      ],
+    },
+    {
+      company: "CoderBunker",
+      href: "https://coderbunker.com",
+      badges: [],
+      location: "Shanghai, China",
+      title: "Frontend Developer (Contract)",
+      logoUrl: "/coderbunker.png",
+      start: "August 2020",
+      end: "January 2021",
+      description: [
+        "Collaborated with tech lead and backend engineer to develop React-based retail music player for international sports retailer",
+        "Built responsive login interfaces, analytics dashboard, and announcement system to enhance in-store experience",
+      ],
+    },
+  ],
+  education: [
+    {
+      school: "Northeastern University",
+      href: "https://northeastern.edu",
+      degree: "Master of Science in Computer Science",
+      logoUrl: "/northeastern.svg",
+      start: "2022",
+      end: "2025",
+      badges: ["Khoury Community Service Award 2025"],
+    },
+    {
+      school: "Boston University",
+      href: "https://bu.edu",
+      degree: "Bachelor of Science in Business Administration & Bachelor of Arts in Economics",
+      logoUrl: "/bostonuniversity.png",
+      start: "2013",
+      end: "2017",
+    },
+  ],
+  projects: [
+    {
+      title: "Project Interview Coach: AI Voice Interviewer with RAG",
+      href: "",
+      dates: "December 2025",
+      active: true,
+      description:
+        "An AI-powered technical interviewer that conducts voice-based interviews about your project. Built with LiveKit for real-time voice communication and RAG (Retrieval Augmented Generation) for context-aware questioning.",
+      technologies: [
+        "React",
+        "Python",
+        "FastAPI",
+        "OpenAI",
+        "LiveKit",
+        "ChromaDB",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/yizucodes/interview-agent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/project-interview-coach.png",
+      video: "https://www.youtube.com/embed/WAVZ7pkXPE8?si=xv_2RsDPYZGtYn6U",
+    },
+    {
+      title: "AI Prompt System Monitor",
+      href: "",
+      dates: "October 2025",
+      active: true,
+      description:
+        "Full-stack application for continuous evaluation and monitoring of AI prompt systems. Built to help application-layer AI teams monitor stability and test performance across models.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Recharts",
+        "OpenAI API",
+      ],
+      links: [],
+      image: "/ai-prompt-system-monitor.png",
+      video: "https://www.loom.com/embed/2136ab7d80d9406e8124bc76bf49a96d",
+    },
+    {
+      title: "Memory: Meta Glasses Memory Assistant",
+      href: "",
+      dates: "June 2025",
+      active: true,
+      subtitle: "🏆 Winner - Meta Llama Hackathon WebAI Track",
+      description:
+        "A multimodal AI assistant that helps Meta Glasses users recall networking conversations by intelligently processing video through frame extraction, transcription, and Llama 4-powered analysis.",
+      technologies: [
+        "Python",
+        "Llama 4",
+        "WebAI",
+        "OpenAI Whisper",
+      ],
+      links: [
+        {
+          type: "Project",
+          href: "https://github.com/yizucodes/memory/tree/cli-solution",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/meta-llama-hackathon.png",
+      video: "https://www.youtube.com/embed/ZesFEzqKoKQ?si=_NTxe_A_4LnTSxOp",
+    },
+    {
+      title: "Tippin' Dots: Cross-Platform Social Tipping System",
+      href: "",
+      dates: "April 2025",
+      active: true,
+      subtitle: "🏆 First Prize Winner at Polkadot & EasyA Harvard Hackathon ($5,000)",
+      description:
+        "Cross-platform social tipping product connecting decentralized identities with Polkadot blockchain wallets, enabling seamless tipping across Bluesky.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Ethereum.js",
+        "Polkadot Asset Hub",
+        "@atproto/api",
+        "DIDs"
+      ],
+      links: [
+        {
+          type: "Project",
+          href: "https://github.com/yizucodes/Tippin-Dots",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      video: "https://www.youtube.com/embed/o78nPBvRyKk?si=sSbYgJoQQ54f_Ab6",
+      image: "/polkadot-harvard-hackathon.png",
+    },
+  ],
+  hackathons: [],
+} as const;
